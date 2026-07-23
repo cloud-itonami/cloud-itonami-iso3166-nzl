@@ -11,13 +11,7 @@
           :rep-provenance "https://www.gets.govt.nz/"
           :corporate-number-owner-authority "Companies Office / Inland Revenue"
           :corporate-number-legal-basis "NZBN / company number"
-          :corporate-number-provenance "https://companies-register.companiesoffice.govt.nz/"}
-   "USA" {:name "United States" :owner-authority "GSA/SAM.gov" :legal-basis "FAR" :national-spec "SAM.gov" :provenance "https://sam.gov/"
-          :required-evidence ["EIN record" "SAM.gov registration record" "State business registration record" "SAM UEI verification record"]}
-   "AUS" {:name "Australia" :owner-authority "AusTender" :legal-basis "CPRs" :national-spec "AusTender" :provenance "https://www.tenders.gov.au/"
-          :required-evidence ["ABN record" "AusTender registration" "ASIC extract" "Authorized-representative record"]}
-   "GBR" {:name "United Kingdom" :owner-authority "CCS" :legal-basis "PA 2023" :national-spec "Find a Tender" :provenance "https://www.find-tender.service.gov.uk/"
-          :required-evidence ["Companies House number" "Find a Tender registration" "CH extract" "Authorized-representative record"]}})
+          :corporate-number-provenance "https://companies-register.companiesoffice.govt.nz/"}})
 
 (defn spec-basis [iso3] (get catalog iso3))
 (defn coverage
